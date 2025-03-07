@@ -20,3 +20,5 @@ source kardinalitaet_n_m_II\03_1-1_n-m.sql
 source kardinalitaet_n_m_II\03a_1-1_n-m_select.sql
 source kardinalitaet_n_m_II\03b_1-1_n-m_select.sql
 
+
+02_DB_work\02_DB_models\kardinalitaet_1_1\03_1-1.sql

@@ -4,7 +4,7 @@
   "settings": {
     "width": 2000,
     "height": 2000,
-    "scrollTop": -3,
+    "scrollTop": -4,
     "scrollLeft": -16.0622,
     "zoomLevel": 1,
     "show": 511,
@@ -276,7 +276,7 @@
         "comment": "Dienstzeit",
         "dataType": "TINYINT",
         "default": "",
-        "options": 0,
+        "options": 8,
         "ui": {
           "keys": 0,
           "widthName": 60,
@@ -285,7 +285,7 @@
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1741336183293,
+          "updateAt": 1741358680430,
           "createAt": 1741335823441
         }
       },
@@ -571,7 +571,8 @@
       {
         "name": 1741336165187,
         "dataType": 1741336171693,
-        "comment": 1741336183291
+        "comment": 1741336183291,
+        "options(notNull)": 1741358680428
       }
     ],
     "sF0J1sXnmVQ0Hg2rRtWij": [

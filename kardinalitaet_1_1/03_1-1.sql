@@ -24,7 +24,7 @@ INSERT INTO design.cats (id, cat_name,fur_color) VALUES
 ;
 
 -- Inhalte: MT
-SELECT * FROM desing.cats;
+SELECT * FROM design.cats;
 
 
 -- Detailtabelle: Verbindung zur MT über Fremdschlüssel
@@ -42,10 +42,10 @@ ALTER TABLE design.servants
   ADD CONSTRAINT FK_cats_TO_servants
     FOREIGN KEY (cats_id)
     REFERENCES cats (id);
-
+  -- ADD CONSTRAINT UQ_cats_id UNIQUE (cats_id);
 -- wichtig bei 1:1  UNIQUE im fk
 ALTER TABLE design.servants
-  ADD CONSTRAINT UQ_cats_id UNIQUE (cats_id);
+ ADD CONSTRAINT UQ_cats_id UNIQUE (cats_id);
 
 -- Struktur: DT
 DESCRIBE design.servants;
