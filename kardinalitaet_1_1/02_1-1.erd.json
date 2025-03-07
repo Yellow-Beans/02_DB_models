@@ -4,13 +4,13 @@
   "settings": {
     "width": 2000,
     "height": 2000,
-    "scrollTop": -2,
+    "scrollTop": -3,
     "scrollLeft": 0,
     "zoomLevel": 1,
     "show": 511,
     "database": 4,
     "databaseName": "",
-    "canvasType": "ERD",
+    "canvasType": "@dineug/erd-editor/builtin-schema-sql",
     "language": 1,
     "tableNameCase": 4,
     "columnNameCase": 2,
@@ -133,7 +133,7 @@
         "id": "7YNTGSr7xu74izkOZ5OI-",
         "tableId": "i3lEklgP0CKBEAyOV5QR3",
         "name": "id",
-        "comment": "'Index'",
+        "comment": "Index",
         "dataType": "INT",
         "default": "",
         "options": 11,
@@ -145,7 +145,7 @@
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1741338516722,
+          "updateAt": 1741339229500,
           "createAt": 1741335396561
         }
       },
@@ -336,7 +336,7 @@
         "comment": "FK",
         "dataType": "INT",
         "default": "",
-        "options": 8,
+        "options": 12,
         "ui": {
           "keys": 2,
           "widthName": 60,
@@ -345,7 +345,7 @@
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1741338681118,
+          "updateAt": 1741339398304,
           "createAt": 1741338627423
         }
       }
@@ -491,7 +491,7 @@
         "options(autoIncrement)": 1741335416376,
         "name": 1741335560932,
         "dataType": 1741335568508,
-        "comment": 1741335588132,
+        "comment": 1741339229498,
         "options(primaryKey)": 1741338516721
       }
     ],
@@ -633,7 +633,8 @@
         "name": 1741338670098,
         "dataType": 1741338627418,
         "default": 1741338627418,
-        "comment": 1741338681118
+        "comment": 1741338681118,
+        "options(unique)": 1741339398303
       }
     ],
     "_8QsSm_IM4RWnErm1RRGA": [

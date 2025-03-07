@@ -1,0 +1,24 @@
+CREATE TABLE cats
+(
+  id        INT         NOT NULL AUTO_INCREMENT COMMENT 'Index',
+  cat_name  VARCHAR(45) NOT NULL COMMENT 'Katzenname',
+  fur_color VARCHAR(45) NOT NULL COMMENT 'Fellfarbe',
+  PRIMARY KEY (id)
+);
+
+CREATE TABLE servants
+(
+  id           INT         NOT NULL COMMENT 'Index',
+  servant_name VARCHAR(45) NOT NULL COMMENT 'Name der Diener',
+  yrs_served   TINYINT     NULL     COMMENT 'Dienstzeit',
+  cats_id      INT         NOT NULL COMMENT 'FK',
+  PRIMARY KEY (id)
+) COMMENT 'Diener';
+
+ALTER TABLE servants
+  ADD CONSTRAINT UQ_cats_id UNIQUE (cats_id);
+
+ALTER TABLE servants
+  ADD CONSTRAINT FK_cats_TO_servants
+    FOREIGN KEY (cats_id)
+    REFERENCES cats (id);
