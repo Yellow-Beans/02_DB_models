@@ -1,3 +1,5 @@
+\! cls
+
 -- Vorbereitungen
 DROP TABLE IF EXISTS design.servants, design.cats;
 
@@ -28,9 +30,9 @@ SELECT * FROM desing.cats;
 -- Detailtabelle: Verbindung zur MT über Fremdschlüssel
 CREATE TABLE design.servants
 (
-  id           INT         NOT NULL COMMENT 'Index',
+  id           INT         NOT NULL AUTO_INCREMENT COMMENT 'Index',
   servant_name VARCHAR(45) NOT NULL COMMENT 'Name der Diener',
-  yrs_served   TINYINT     NULL     COMMENT 'Dienstzeit',
+  yrs_served   TINYINT     NOT NULL COMMENT 'Dienstzeit',
   cats_id      INT         NOT NULL COMMENT 'FK',
   PRIMARY KEY (id)
 ) COMMENT 'Diener';

@@ -5,12 +5,12 @@
     "width": 2000,
     "height": 2000,
     "scrollTop": -3,
-    "scrollLeft": 0,
+    "scrollLeft": -16.0622,
     "zoomLevel": 1,
     "show": 511,
     "database": 4,
     "databaseName": "",
-    "canvasType": "@dineug/erd-editor/builtin-schema-sql",
+    "canvasType": "ERD",
     "language": 1,
     "tableNameCase": 4,
     "columnNameCase": 2,
@@ -216,7 +216,7 @@
         "comment": "Index",
         "dataType": "INT",
         "default": "",
-        "options": 10,
+        "options": 11,
         "ui": {
           "keys": 1,
           "widthName": 60,
@@ -225,7 +225,7 @@
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1741338524909,
+          "updateAt": 1741343030827,
           "createAt": 1741335741761
         }
       },
@@ -541,7 +541,8 @@
         "name": 1741335760570,
         "dataType": 1741335762909,
         "comment": 1741335792636,
-        "options(primaryKey)": 1741338524909
+        "options(primaryKey)": 1741338524909,
+        "options(autoIncrement)": 1741343030826
       }
     ],
     "DMzZFT_woii_pFzHuzOAZ": [
